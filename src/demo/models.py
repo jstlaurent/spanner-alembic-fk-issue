@@ -29,6 +29,7 @@ class A(Base, EnvironmentMixin):
     __tablename__ = 'a'
 
     id = Column(String, primary_key=True)
+    content = Column(String, nullable=False)
 
 
 class B(Base, EnvironmentMixin):
